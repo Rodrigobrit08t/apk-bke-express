@@ -1,0 +1,25 @@
+{
+  "name": "api-bke-express",
+  "version": "1.0.0",
+  "description": "API Node com framework Express",
+  "main": "src/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rodrigobrit08t/apk-bke-express.git"
+  },
+  "keywords": [
+    "api",
+    "node",
+    "express",
+    "zod"
+  ],
+  "author": "Rodrigo Farias",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rodrigobrit08t/apk-bke-express/issues"
+  },
+  "homepage": "https://github.com/Rodrigobrit08t/apk-bke-express#readme"
+}
