@@ -7,8 +7,12 @@
   "scripts": {
     "start": "node src/server.js",
     "dev": "node --watch src/server.js",
+<<<<<<< HEAD
     "prisma:pull": "npx prisma db pull",
     "prisma:push": "npx prisma db push",
+=======
+    "prisma:pull":"npx prisma db pull",
+>>>>>>> 18bbd2326567d2f1853d0282bbac63711d2f6735
     "prisma:generate": "npx prisma generate"
   },
   "repository": {
@@ -28,6 +32,10 @@
   },
   "homepage": "https://github.com/Rodrigobrit08t/apk-bke-express#readme",
   "dependencies": {
+    "@prisma/client": "^5.18.0",
     "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "prisma": "^5.18.0"
   }
 }

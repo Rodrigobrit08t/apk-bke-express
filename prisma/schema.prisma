@@ -3,14 +3,24 @@ generator client {
 }
 
 datasource db {
+<<<<<<< HEAD
   //provider = "mysql"
   provider = "postgresql"
+=======
+  provider = "mysql"
+>>>>>>> 18bbd2326567d2f1853d0282bbac63711d2f6735
   url      = env("DATABASE_URL")
 }
 
 model user {
   id    Int    @id @default(autoincrement())
   name  String @db.VarChar(100)
+<<<<<<< HEAD
   email String @unique(map: "email_UNIQUE") @db.VarChar(200)
   pass  String @db.VarChar(256)
 }
+=======
+  email String @unique(map: "email_UNIQUE") @db.VarChar(45)
+  pass  String @db.VarChar(256)
+}
+>>>>>>> 18bbd2326567d2f1853d0282bbac63711d2f6735
