@@ -1,26 +1,16 @@
 import express from 'express'
+import prodList from '../controllers/product/prodList.js'
+import prodByID from '../controllers/product/prodByID.js'
+import createProd from '../controllers/product/createProd.js'
+import editProd from '../controllers/product/editProd.js'
+import deleteProd from '../controllers/product/deleteProd.js'
 
 const router = express.Router()
 
-router.get('/', (req, res) => {
-    res.json({message:"Rota GET /product"})
-  })
-
-router.post('/', (req, res) => {
-    res.json({message:"Rota POST /product"})
-  })
-
-router.put('/', (req, res) => {
-    res.json({message:"Rota PUT /product"})
-  })
-
-router.patch('/', (req, res) => {
-    res.json({message:"Rota PATCH /product"})
-  })
-
-router.delete('/', (req, res) => {
-    res.json({message:"Rota DELETE /product"})
-  })
-
+router.get('/', prodList)
+router.patch('/', prodByID)
+router.post('/', createProd)
+router.put('/', editProd)
+router.delete('/', deleteProd)
 
 export default router
